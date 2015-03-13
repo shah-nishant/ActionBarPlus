@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.12.+'
+        classpath 'com.android.tools.build:gradle:1.0.0'
     }
 }
 apply plugin: 'com.android.library'
@@ -13,11 +13,11 @@ dependencies {
     compile files('libs/nineoldandroids-2.4.0.jar')
     compile files('libs/recyclerview-v7.jar')
     //compile 'com.android.support:recyclerview-v7:+'
-    compile 'com.android.support:appcompat-v7:20+'
+    compile 'com.android.support:appcompat-v7:21+'
 }
 android {
-    compileSdkVersion 19
-    buildToolsVersion '20.0.0'
+    compileSdkVersion 21
+    buildToolsVersion '21.0.1'
     sourceSets {
         main.manifest.srcFile 'AndroidManifest.xml'
         main.java.srcDir 'src'
